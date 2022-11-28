@@ -1,0 +1,104 @@
+@st-import [colorCategory, colorBlue] from "../../globals.st.css";
+
+.root {
+  -st-states: isActive;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  min-width: 10px;
+  min-height: 10px;
+
+}
+
+.root:isActive {
+  transition: 0.5s;
+  background-color: value(colorCategory);
+}
+
+.root > a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  /* padding: 15px; */
+}
+
+.bi-chevron-down {
+  margin-left: 10px;
+}
+
+.title {}
+
+.hoverUp {
+  margin: 0 2px;
+  display: flex;
+  align-items: center;
+}
+
+.hoverDown {
+
+  margin: 0 2px;
+  display: flex;
+  align-items: center;
+}
+
+.detailsItemMenu1,
+.detailsItemMenu2,
+.detailsItemMenu3 {
+  cursor: auto;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  display: grid;
+
+  box-shadow: 0 3px 10px rgb(0 0 0 / 15%);
+  background: #fff;
+}
+
+.detailsItemMenu1 {
+  grid-template-columns: 25% 25% 25% 25%;
+  width: 1300px;
+  border-top: 0.4rem solid value(colorBlue);
+  padding: 0 20px;
+}
+
+.detailsItemMenu2 {
+  grid-template-columns: 33% 33% 34%;
+  width: 1000px;
+  border-top: 0.4rem solid value(colorBlue);
+  padding: 5px 5px 10px 5px;
+  padding: 10px 20px;
+}
+
+.detailsItemMenu3 {
+  grid-template-columns: auto;
+  width: 250px;
+  border-top: 0.4rem solid value(colorBlue);
+  padding: 10px 20px;
+}
+
+.detailsItemMenuLast {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  display: grid;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 15%);
+  background: #fff;
+  grid-template-columns: auto;
+  width: 240px;
+  border-top: 0.4rem solid value(colorBlue);
+  padding: 10px 20px;
+}
+
+.iconDetailsMenu {
+  position: absolute;
+  right: 10px;
+  top: -12px;
+
+}
+
+.iconUp,
+.iconDown {
+  color: #fff;
+}

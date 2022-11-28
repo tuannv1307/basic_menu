@@ -1,0 +1,7 @@
+.root {
+  -st-states: active;
+}
+
+.root:active {
+  width: 1280px;
+}

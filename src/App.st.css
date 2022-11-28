@@ -1,0 +1,8 @@
+@st-import [backgroundColor] from './globals.st.css';
+
+.root {
+
+  /* background-color: value(backgroundColor); */
+  transform: translateY(5rem);
+
+}

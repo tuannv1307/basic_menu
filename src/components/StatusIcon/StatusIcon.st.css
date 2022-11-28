@@ -1,0 +1,20 @@
+.lableHot {
+    color: #FFF;
+    background: #ff5501 !important;
+    padding: 4px;
+    font-size: 11px;
+}
+
+.lableNew {
+    color: #FFF;
+    background: #14ac30 !important;
+    padding: 4px;
+    font-size: 11px;
+}
+
+.lableSale {
+    color: #FFF;
+    background: #ed143d !important;
+    padding: 4px;
+    font-size: 11px;
+}

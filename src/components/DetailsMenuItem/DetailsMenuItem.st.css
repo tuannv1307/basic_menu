@@ -1,0 +1,108 @@
+@st-import [colorCategory, colorHover] from "../../globals.st.css";
+
+.root {
+    -st-states: fontSize(enum(18, 15));
+    color: black;
+    display: flex;
+    flex-direction: column;
+    box-shadow: #007dbd;
+
+}
+
+.root:fontSize(18) {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.root:fontSize(15) {
+    margin: 0 10px;
+}
+
+.top {
+    height: 10px;
+    left: 0;
+    background-color: value(colorCategory);
+}
+
+.itemCategory {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navItem {
+    -st-states: fontSize(enum(18, 15)), activeHover;
+    margin: 0 20px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.navItem:fontSize(15) {
+    margin: 0;
+}
+
+.navItem:fontSize(15):hover {
+    margin: 0;
+    color: #007dbd !important;
+}
+
+.navItem > a {
+    padding: 10px;
+    /* color: #333; */
+    text-decoration: none;
+}
+
+.navItem > a:hover {
+    /* background-color: value(colorHover); */
+    color: #007dbd !important;
+}
+
+.navItem:hover {
+    background-color: value(colorHover);
+}
+
+.navItem:activeHover {
+    background-color: value(colorHover);
+}
+
+.title {
+
+    font-size: 15px;
+    font-weight: 300;
+    width: 100%;
+    text-align: left;
+    display: flex !important;
+}
+
+
+.iconTile {
+    margin-left: 5px;
+}
+
+.iconDetailsMenuItem {
+    margin-left: 5px;
+}
+
+.categoryTitle {
+    -st-states: fontSize(enum(18, 15));
+    text-align: left;
+    display: flex;
+    font-size: 18px;
+    color: #007dbd;
+}
+
+.categoryTitle:fontSize(18) {
+    width: 100%;
+
+}
+
+.categoryTitle:fontSize(15) {
+    width: 100%;
+    font-size: 15px;
+    color: #333;
+    font-weight: 300;
+}
+
+/* .categoryTitle:fontSize(15):hover {
+    color: #007dbd !important;
+} */

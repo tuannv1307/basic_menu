@@ -1,0 +1,13 @@
+.root {
+    background-color: rgb(37, 37, 38);
+    text-align: center;
+    position: sticky;
+    top: -80px;
+    z-index: 1000;
+}
+
+.title {}
+
+.anchor {}
+
+.icon {}

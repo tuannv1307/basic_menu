@@ -1,0 +1,9 @@
+{
+  "": [
+    {
+      "propName": "DetailsMenuItem",
+      "propType": "string",
+      "defaultValue": "DetailsMenuItem"
+    }
+  ]
+}
