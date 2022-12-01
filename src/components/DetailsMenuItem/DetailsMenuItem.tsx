@@ -54,8 +54,6 @@ const DetailsMenuItem = ({
             className={st(classes.navItem, { fontSize, activeHover })}
             key={index}
             data-hook="nav-item-category"
-            // onMouseLeave={() => setActiveHover(true)}
-            // onMouseEnter={() => setActiveHover(false)}
           >
             <a href="#">
               <span className={st(classes.title)}>
